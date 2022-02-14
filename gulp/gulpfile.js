@@ -89,7 +89,7 @@ function cleanDist() {
 
 // В Билде: Перемещаем файлы в папку dist
 function build() {
-  return src(["../app/assets/fonts/**/*", "../app/assets/php/**/*"]).pipe(dest("../dist"));
+  return src(["../app/assets/fonts/**/*"]).pipe(dest("../dist/assets/fonts"));
 }
 // В слежении: Следим за изменением файлов в этих папках
 function watching() {

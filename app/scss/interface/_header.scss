@@ -1,0 +1,60 @@
+.header {
+  padding: 28px 0;
+  color: #fff;
+  background: #333;
+  // .header__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // .header__menu
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__item
+  &__item {
+    margin-right: 40px;
+    min-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  // .header__logo
+  &__logo {
+    margin: 0 30px;
+  }
+}
+
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  // .icon--search
+
+  &--search {
+    background: url('../img/icons/gridicons_search.svg') center center / contain no-repeat;
+  }
+
+  // .icon--account
+
+  &--account {
+    background: url('../img/icons/gridicons_account.svg') center center / contain no-repeat;
+  }
+
+  // .icon--wishlist
+
+  &--wishlist {
+    background: url('../img/icons/gridicons_like.svg') center center / contain no-repeat;
+  }
+}
